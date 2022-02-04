@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CadEmpresa</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <form id="formulario" name="formulario" method="post" action="salvarEmpresa.php">
+    <h2 a><strong>Sistema de cadastro - ADM</strong></h2>
+
+        <h4> Empresa</h4>
+        <table id="cadastro">
+            <tr>
+                <td >Nome_Empresa</td>
+                <td ><input name="nome_empresa" type="text" id="nome_empresa" placeholder="insira o nome" required/></td>
+            </tr>
+            <tr>
+                <td>Nome_Fantasia</td>
+                <td><input name="nome_fantasia" type="text" id="nome_fantasia" placeholder="nome fantasia" required/> </td>
+            </tr>
+            <tr>
+                <td>CNPJ</td>
+                <td ><input name="cnpj" type="text" id="cnpj" placeholder="Somente numeros" required/></td>
+            </tr>
+            <tr>
+                <td>Endereco_Empresa</td>
+                <td><textarea name="endereco_empresa" type="txtArea" id="endereco_empresa" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Telefone</td>
+                <td><input name="telefone" type="text" id="telefone" placeholder="Somente numeros"> </td>
+            </tr>
+            <tr>
+                <td>id_adm</td>
+                <td><input name="id_adm" type="text" id="id_adm" placeholder="id do dono da empresa"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Salvar" style="cursor:pointer"/>
+            </tr>
+        </table>
+
+    </form>
+    <br><h3><a href="adm.php">Voltar...</a></h3></br>
+</body>
+</html>

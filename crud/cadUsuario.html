@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CadUsuario</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <form id="formulario" name="formulario" method="post" action="salvarUsuario.php">
+        <h2 a><strong>Sistema de cadastro - ADM</strong></h2>
+
+        <h4> Usuario</h4>
+        <table id="cadastro">
+            <tr>
+                <td >Nome_Usuario</td>
+                <td ><input name="nome_usuario" type="text" id="nome_usuario" placeholder="insira o nome" required/></td>
+            </tr>
+            <tr>
+                <td>Telefone_Usuario</td>
+                <td><input name="telefone_usuario" type="text" id="telefone_usuario" placeholder="Somente numeros"> </td>
+            </tr>
+            <tr>
+                <td>CPF</td>
+                <td ><input name="cpf" class="form-control cpf-mask" type="text" id="cpf" placeholder="Somente numeros" required/></td>
+            </tr>
+            <tr>
+                <td>CNH</td>
+                <td><input name="cnh" type="text" id="cnh" placeholder="nº registro"/></td>
+            </tr>
+            <tr>
+                <td>Endereco_Usuario</td>
+                <td><textarea name="endereco_usuario" type="txtArea" id="endereco_usuario" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Carro</td>
+                <td><input name="carro" type="text" id="carro" /> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Salvar" style="cursor:pointer"/>
+            </tr>
+        </table>
+
+    </form>
+    <br><h3><a href="adm.php">Voltar...</a></h3></br>
+</body>
+</html>
